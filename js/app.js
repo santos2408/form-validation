@@ -22,7 +22,7 @@ inputUsername.addEventListener('input', event => {
 
    if (!isAValidUsername) {
       paragraphInputFeedback.setAttribute('class', 'username-help-feedback')
-      paragraphInputFeedback.innerHTML = 'O valor deve conter no mínimo 6 caracteres, com apenas letras maiúsculas e/ou minúsculas.'
+      paragraphInputFeedback.textContent = 'O valor deve conter no mínimo 6 caracteres, com apenas letras maiúsculas e/ou minúsculas.'
       inputUsername.style.borderColor = '#E8B635'
       inputUsername.insertAdjacentElement('afterend', paragraphInputFeedback)
       return
