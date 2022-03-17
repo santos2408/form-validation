@@ -1,7 +1,18 @@
+/* ============= GLOBAL STYLES ============= */
+
 *,
 *::before,
 *::after {
    box-sizing: border-box;
+}
+
+:root {
+   --selected-color: #9AA9E0;
+   --help-color: #EBC565; 
+   --succsess-color: #6EC080;
+
+   --base-color: #444444;
+   --base-color-alt: #A8A8A8;
 }
 
 html {
@@ -24,7 +35,10 @@ img {
 
 input, button {
    display: block;
+   outline: none;
 }
+
+/* ============= CONTENT ============= */
 
 .main {
    display: grid;
@@ -34,3 +48,48 @@ input, button {
    height: 100vh;
 }
 
+.form__description {
+   text-align: center;
+   margin-bottom: 4rem;
+}
+
+.form__title {
+   font-size: 3.6rem;
+   margin-bottom: .5rem;
+}
+
+.form__subtitle {
+   font-size: 1.8rem;
+   color: var(--base-color-alt);
+}
+
+.form__container {
+   width: 100%;
+}
+
+.form__input,
+.form__button {
+   width: 100%;
+}
+
+.form__container {
+   position: relative;
+}
+
+.form__input {
+   border-radius: 5px;
+   border: 2px solid #E3E3E3;
+   padding: 2rem 1rem 2rem 5rem;
+   font-size: 1.8rem;
+}
+
+.form__input::placeholder {
+   color: #E3E3E3;
+}
+
+.image {
+   position: absolute;
+   top: 1.5rem;
+   left: 1.7rem;
+   fill: #000;
+}
