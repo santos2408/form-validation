@@ -7,12 +7,16 @@
 }
 
 :root {
-   --selected-color: #9AA9E0;
+   --selected-color: hsl(227, 53%, 74%);
+   --selected-color-opacity: hsl(227, 53%, 74%, 0.2);
+   --selected-color-alt: #8598DA;
    --help-color: #EBC565; 
    --succsess-color: #6EC080;
 
    --base-color: #444444;
    --base-color-alt: #A8A8A8;
+   --base-color-opacity: hsl(0, 0%, 27%, .06);
+   --white-color: #fff;
 }
 
 html {
@@ -80,16 +84,45 @@ input, button {
    border-radius: 5px;
    border: 2px solid #E3E3E3;
    padding: 2rem 1rem 2rem 5rem;
+
    font-size: 1.8rem;
+   color: var(--base-color);
+
+   transition: .3s;
+}
+
+.form__input:hover,
+.form__input:focus {
+   box-shadow: 0 20px 8px -15px var(--selected-color-opacity);
+   border-color: #9AA9E0;
 }
 
 .form__input::placeholder {
    color: #E3E3E3;
 }
 
-.image {
+.form__icon {
    position: absolute;
-   top: 1.5rem;
+   top: 2.1rem;
    left: 1.7rem;
-   fill: #000;
+}
+
+.form__button {
+   background-color: var(--selected-color);
+
+   border: none;
+   border-radius: 5px;
+   margin-top: 4rem;
+   padding: 1.5rem 0;
+   
+   font-size: 1.8rem;
+   font-weight: 500;
+   color: var(--white-color);
+
+   cursor: pointer;
+   transition: .3s;
+}
+
+.form__button:hover {
+   background-color: var(--selected-color-alt);
 }
