@@ -123,7 +123,7 @@ input, button {
 
    border: none;
    border-radius: 5px;
-   margin-top: 2rem;
+   margin: 2rem 0;
    padding: 1.5rem 0;
    
    font-size: 1.8rem;
@@ -152,5 +152,13 @@ input, button {
 .username-success-feedback {
    line-height: 2.4rem;
    color: var(--succsess-color);
+}
+
+.username-help-submit {
+   color: var(--help-color);
+}
+
+.username-success-submit {
+   margin-top: 1rem;
 }
 
