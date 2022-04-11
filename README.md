@@ -24,15 +24,15 @@
 
 O usurário deve ser capaz de:
 
-- Valir input conforme o usuário digita.
-- Exibi feedback da validação.
+- Validar input conforme o usuário digita.
+- Exibir feedback da validação.
 - Exibir feedback de envio do form.
 
 ### Screenshot
 
 ![](./img/desktop.jpg)
 ## Link da Página Online:
-[Todo - Web App](rogersanttoss-form-validation.netlify.app) 
+[Form Validation](rogersanttoss-form-validation.netlify.app) 
 
 
 <!-- Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it. -->
